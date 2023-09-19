@@ -1,0 +1,30 @@
+[project]
+name = "hoi"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Francesco Gentile", email = "francesco.gentile@studenti.unitn.it"},
+]
+dependencies = [
+    "pyedifice>=0.1.1",
+    "pyside6>=6.5.2",
+    "surrealdb>=0.3.1",
+    "Pillow>=10.0.1",
+]
+requires-python = ">=3.11,<3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "black>=23.9.1",
+    "ruff>=0.0.290",
+    "pyright>=1.1.327",
+]
+test = [
+    "ipykernel>=6.25.2",
+]
